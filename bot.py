@@ -14,11 +14,11 @@ logger = logging.getLogger(__name__)
 list = ['558c75c8', '558c75c8']
 
 def start(update, context):
-    update.message.reply_text('Hi! \nWelcome to the *IMDb Bot*. \nSend me the name of any movie or TV show to get its details. \nHappy viewing! \n \nCreated by [Karan Malik](https://karan-malik.github.io)',parse_mode='markdown')
+    update.message.reply_text('Hayırlı Cumalar! \n*IMDb Bot*'a Hoşgrldin. \n \nHappy viewing! \nDetayları almak için bana herhangi bir filmin veya TV şovunun adını gönder.\nYaratıcı[:d](https://t.me/mmagneto)',parse_mode='markdown')
 
 
 def help(update, context):
-    update.message.reply_text('Send me the name of any movie to get its details. \nTry out "Avengers Endgame"')
+    update.message.reply_text('Detayları almak için bana herhangi bir filmin adını gönder.\nŞunu dene "Avengers Endgame"')
 
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
