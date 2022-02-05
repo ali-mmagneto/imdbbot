@@ -43,7 +43,7 @@ def reply(update, context):
     ans+='*IMDb Puanı*: '+data['imdbRating']+' \n'
     ans+='*Oyuncular*: '+data['Actors']+'\n'
     ans+='*Tür*: '+data['Genre']+'\n'
-    ans+='[.]('+data['Poster']+')'
+    ans+='[@anagrupp]('+data['Poster']+')'
     update.message.reply_text(ans,parse_mode='markdown')  
 
 def main():
