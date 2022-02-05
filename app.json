@@ -1,9 +1,9 @@
 
 {
-  "name": "bot",
+  "name": "Telegram İmdb Bot",
   "env": {
     "BOT_TOKEN": {
-      "description": "Enter bot token.",
+      "description": "Bot Father'dan Aldığın Bot Tokenini Gir.",
       "value": ""
     }
   },
