@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 list = ['558c75c8', '558c75c8']
 
 def start(update, context):
-    update.message.reply_text('Hayırlı Cumalar!\n*IMDb Bot*'a Hoşgeldin.\n\nKeyifli Kullanmalar\nDetayları almak için bana herhangi bir filmin veya TV şovunun adını gönder.\nYaratıcı[:d](https://t.me/mmagneto)',parse_mode='markdown')
+    update.message.reply_text('Hayırlı Cumalar!\n*IMDb Botum ben* Hoşgeldin.\nKeyifli Kullanmalar\nDetayları almak için bana herhangi bir filmin veya TV şovunun adını gönder.\nYaratıcı[:d](https://t.me/mmagneto)',parse_mode='markdown')
 
 
 def help(update, context):
