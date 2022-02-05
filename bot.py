@@ -39,7 +39,7 @@ def reply(update, context):
     data=json.loads(x)
     
     ans=''
-    ans+='*'+data['Title']+'* ('+data['year']+')'+'\n\n'
+    ans+='*'+data['Title']+'* ('+data['Year']+')'+'\n\n'
     ans+='*IMDb Puanı*: '+data['imdbRating']+' \n'
     ans+='Oyuncular*: '+data['Actors']+'\n'
     ans+='*Tür*: '+data['Genre']+'\n\n'
