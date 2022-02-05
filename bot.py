@@ -40,12 +40,12 @@ def reply(update, context):
     
     ans=''
     ans+='*'+data['Title']+'* ('+data['Year']+')'+'\n\n'
-    ans+='*IMDb Puanı*: '+data['imdbRating']+' \n'
-    ans+='Oyuncular*: '+data['Actors']+'\n'
-    ans+='*Tür*: '+data['Genre']+'\n\n'
+    ans+='*IMDb Rating*: '+data['imdbRating']+' \n'
+    ans+='*Cast*: '+data['Actors']+'\n'
+    ans+='*Genre*: '+data['Genre']+'\n\n'
+    ans+='*Plot*: '+data['Plot']+'\n'
     ans+='[.]('+data['Poster']+')'
     update.message.reply_text(ans,parse_mode='markdown')  
-
 
 def main():
 
