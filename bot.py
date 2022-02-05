@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Dec 25 20:24:17 2020
-
-@author: karan
-"""
 import logging
 import random
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
@@ -45,11 +39,10 @@ def reply(update, context):
     data=json.loads(x)
     
     ans=''
-    ans+='*'+data['Title']+'* ('+data['Year']+')'+'\n\n'
-    ans+='*IMDb Rating*: '+data['imdbRating']+' \n'
-    ans+='*Cast*: '+data['Actors']+'\n'
-    ans+='*Genre*: '+data['Genre']+'\n\n'
-    ans+='*Plot*: '+data['Plot']+'\n'
+    ans+='*'+data['Başlık']+'* ('+data['Year']+')'+'\n\n'
+    ans+='*IMDb Puanı*: '+data['imdbRating']+' \n'
+    ans+='Oyuncular*: '+data['Actors']+'\n'
+    ans+='*Tür*: '+data['Genre']+'\n\n'
     ans+='[.]('+data['Poster']+')'
     update.message.reply_text(ans,parse_mode='markdown')  
 
